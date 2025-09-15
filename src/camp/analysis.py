@@ -37,10 +37,10 @@ def compute_moments(data: pd.Series, variable_name: str) -> Dict[str, float]:
 
     moments = {
         'count': len(clean_data),
-        'mean': # TODO,
-        'variance': # TODO,
-        'skewness': # TODO,
-        'kurtosis': # TODO
+        'mean': float(clean_data.mean()),
+        'variance': float(clean_data.var(ddof=1)),   # sample variance
+        'skewness': float(clean_data.skew()),        # sample skewness
+        'kurtosis': float(clean_data.kurtosis())  
     }
 
     return moments
