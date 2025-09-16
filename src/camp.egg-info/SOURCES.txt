@@ -6,3 +6,4 @@ src/camp.egg-info/PKG-INFO
 src/camp.egg-info/SOURCES.txt
 src/camp.egg-info/dependency_links.txt
 src/camp.egg-info/top_level.txt
+tests/test_analysis.py
